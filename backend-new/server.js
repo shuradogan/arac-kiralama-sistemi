@@ -13,10 +13,12 @@ app.use(express.json());
 const authRoutes = require('./src/routes/authRoutes');
 const kiralamaRoutes = require('./src/routes/kiralamaRoutes');
 const profilRoutes = require('./src/routes/profilRoutes');
+const storedProcedureRoutes = require('./src/routes/storedProcedureRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/kiralamalar', kiralamaRoutes);
 app.use('/api/profil', profilRoutes);
+app.use('/api/sp', storedProcedureRoutes);
 
 // Test endpoint
 app.get('/', (req, res) => {
