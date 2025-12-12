@@ -1,0 +1,25 @@
+-- ================================================
+-- ARAÇ KİRALAMA SİSTEMİ - STORED PROCEDURES
+-- ================================================
+-- Kullanım: psql -U postgres -d AracKiralamaDB -f 03_stored_procedures.sql
+-- ================================================
+-- 4 Stored Procedure:
+-- 1. sp_yeni_kiralama_olustur
+-- 2. sp_musteri_toplam_harcama
+-- 3. sp_en_yakin_musait_surucu_bul
+-- 4. sp_aylik_gelir_raporu
+-- ================================================
+
+-- Bu dosya şu an BOŞ çünkü backup dosyanızda stored procedure yok.
+-- Eğer stored procedure'leriniz varsa, onları pgAdmin'den
+-- manuel olarak kopyalayıp buraya yapıştırabilirsiniz.
+
+-- ÖRNEK FORMAT:
+-- CREATE OR REPLACE FUNCTION sp_yeni_kiralama_olustur(...)
+-- RETURNS void
+-- LANGUAGE plpgsql
+-- AS $$
+-- BEGIN
+--     ...
+-- END;
+-- $$;
